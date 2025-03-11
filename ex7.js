@@ -22,11 +22,16 @@ let ultimoNumeroComprobar = 10;
 let esNumeroPar;
 
 for (let i = 0; i < ultimoNumeroComprobar; i++) {
-  esNumeroPar = i % 2;
+  esNumeroPar = i % 2 ==0;
   console.log(`El número ${i} es par o impar? ${esNumeroPar}`);
 
-  // Modificar a partir de aquí
+  if (esNumeroPar) {
+    console.log(`El número ${i} es par!`);
+  } else {
+    console.log(`El número ${i} es impar!`);
+  }
 }
+
 
 /**
  * Resultado esperado: https://oscarm.tinytake.com/msc/ODc4MzY0N18yMjIwMzg4Mg

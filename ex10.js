@@ -27,4 +27,26 @@
 let hora_actual = 8;
 let hora_dormir = 24;
 
+for (let i=hora_actual; i<hora_dormir; i++) {
+   
+     if (i==8) {
+         console.log("A las 8, el sim se despierta");
+     } else if (i==9) {
+         console.log("A las 9, el sim desayuna");
+     } else if (i>=10 && i<=16) {
+         console.log(`A las ${i}, el sim estudia Front End`);
+     }
+     else if (i==17) {
+        console.log(`A las ${i}, el sim duerme la siesta`);
+    }
+    else if (i>=18 && i<=21) {
+        console.log(`A las ${i}, el sim tiene tiempo libre`);
+    }
+    else if (i==22) {
+        console.log(`A las ${i}, el sim cena`);
+    } else if ( i== 23) {
+        console.log("A las 23, el sim se va a dormir.");
+
+    }
+ }
 // Resultado esperado aproximado: https://oscarm.tinytake.com/msc/ODc4NTEzNl8yMjIwNTc2Nw
